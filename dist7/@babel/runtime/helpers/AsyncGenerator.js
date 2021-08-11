@@ -1,10 +1,13 @@
-define("@babel/runtime/helpers/AsyncGenerator", ["exports","./AwaitValue"], function (_exports, _AwaitValue) {
+define("@babel/runtime/helpers/AsyncGenerator", ["exports","./AwaitValue","./interopRequireDefault"], function (_exports, _AwaitValue, _interopRequireDefault) {
   "use strict";
+
+  _interopRequireDefault = _interopRequireDefault.__esModule ? _interopRequireDefault.default : _interopRequireDefault;
 
   Object.defineProperty(_exports, "__esModule", {
     value: true
   });
   _exports["default"] = AsyncGenerator;
+  _AwaitValue = _interopRequireDefault(_AwaitValue);
 
   function AsyncGenerator(gen) {
     var front, back;

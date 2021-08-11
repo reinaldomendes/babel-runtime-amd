@@ -1,10 +1,13 @@
-define("@babel/runtime/helpers/get", ["exports","./superPropBase"], function (_exports, _superPropBase) {
+define("@babel/runtime/helpers/get", ["exports","./superPropBase","./interopRequireDefault"], function (_exports, _superPropBase, _interopRequireDefault) {
   "use strict";
+
+  _interopRequireDefault = _interopRequireDefault.__esModule ? _interopRequireDefault.default : _interopRequireDefault;
 
   Object.defineProperty(_exports, "__esModule", {
     value: true
   });
   _exports["default"] = _get;
+  _superPropBase = _interopRequireDefault(_superPropBase);
 
   function _get(target, property, receiver) {
     if (typeof Reflect !== "undefined" && Reflect.get) {

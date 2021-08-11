@@ -1,10 +1,15 @@
-define("@babel/runtime/helpers/wrapRegExp", ["exports","@babel/runtime/helpers/typeof","./setPrototypeOf","./inherits"], function (_exports, _typeof2, _setPrototypeOf, _inherits) {
+define("@babel/runtime/helpers/wrapRegExp", ["exports","@babel/runtime/helpers/typeof","./setPrototypeOf","./inherits","./interopRequireDefault"], function (_exports, _typeof2, _setPrototypeOf, _inherits, _interopRequireDefault) {
   "use strict";
+
+  _interopRequireDefault = _interopRequireDefault.__esModule ? _interopRequireDefault.default : _interopRequireDefault;
 
   Object.defineProperty(_exports, "__esModule", {
     value: true
   });
   _exports["default"] = _wrapRegExp;
+  _typeof2 = _interopRequireDefault(_typeof2);
+  _setPrototypeOf = _interopRequireDefault(_setPrototypeOf);
+  _inherits = _interopRequireDefault(_inherits);
 
   function _wrapRegExp() {
     _exports["default"] = _wrapRegExp = function _wrapRegExp(re, groups) {

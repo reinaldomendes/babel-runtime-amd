@@ -1,10 +1,13 @@
-define("@babel/runtime/helpers/objectSpread", ["exports","./defineProperty"], function (_exports, _defineProperty) {
+define("@babel/runtime/helpers/objectSpread", ["exports","./defineProperty","./interopRequireDefault"], function (_exports, _defineProperty, _interopRequireDefault) {
   "use strict";
+
+  _interopRequireDefault = _interopRequireDefault.__esModule ? _interopRequireDefault.default : _interopRequireDefault;
 
   Object.defineProperty(_exports, "__esModule", {
     value: true
   });
   _exports["default"] = _objectSpread;
+  _defineProperty = _interopRequireDefault(_defineProperty);
 
   function _objectSpread(target) {
     for (var i = 1; i < arguments.length; i++) {

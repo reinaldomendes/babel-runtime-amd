@@ -1,10 +1,16 @@
-define("@babel/runtime/helpers/wrapNativeSuper", ["exports","./getPrototypeOf","./setPrototypeOf","./isNativeFunction","./construct"], function (_exports, _getPrototypeOf, _setPrototypeOf, _isNativeFunction, _construct) {
+define("@babel/runtime/helpers/wrapNativeSuper", ["exports","./getPrototypeOf","./setPrototypeOf","./isNativeFunction","./construct","./interopRequireDefault"], function (_exports, _getPrototypeOf, _setPrototypeOf, _isNativeFunction, _construct, _interopRequireDefault) {
   "use strict";
+
+  _interopRequireDefault = _interopRequireDefault.__esModule ? _interopRequireDefault.default : _interopRequireDefault;
 
   Object.defineProperty(_exports, "__esModule", {
     value: true
   });
   _exports["default"] = _wrapNativeSuper;
+  _getPrototypeOf = _interopRequireDefault(_getPrototypeOf);
+  _setPrototypeOf = _interopRequireDefault(_setPrototypeOf);
+  _isNativeFunction = _interopRequireDefault(_isNativeFunction);
+  _construct = _interopRequireDefault(_construct);
 
   function _wrapNativeSuper(Class) {
     var _cache = typeof Map === "function" ? new Map() : undefined;

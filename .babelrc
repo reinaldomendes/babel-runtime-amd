@@ -8,7 +8,7 @@
     ],
     "plugins": [
         ["@babel/plugin-transform-modules-amd", {
-            "noInterop": true
+            "noInterop": false
         }],
         ["@babel/plugin-transform-runtime", {
             "absoluteRuntime": false,
@@ -16,8 +16,15 @@
             "helpers": true,
             "regenerator": true,
             "version": "^7.14.5",
-            "useESModules": false
+            "useESModules": true,
+            "modules" : false
         }],
         ["@babel/plugin-transform-classes"]
-    ]
+    ],
+    "assumptions": {
+        "constantSuper": true,
+        "noClassCalls": true,
+        "setClassMethods": true,
+        "superIsCallableConstructor": false
+    }
 }

@@ -1,10 +1,14 @@
-define("@babel/runtime/helpers/decorate", ["exports","./toArray","./toPropertyKey"], function (_exports, _toArray, _toPropertyKey) {
+define("@babel/runtime/helpers/decorate", ["exports","./toArray","./toPropertyKey","./interopRequireDefault"], function (_exports, _toArray, _toPropertyKey, _interopRequireDefault) {
   "use strict";
+
+  _interopRequireDefault = _interopRequireDefault.__esModule ? _interopRequireDefault.default : _interopRequireDefault;
 
   Object.defineProperty(_exports, "__esModule", {
     value: true
   });
   _exports["default"] = _decorate;
+  _toArray = _interopRequireDefault(_toArray);
+  _toPropertyKey = _interopRequireDefault(_toPropertyKey);
 
   function _decorate(decorators, factory, superClass, mixins) {
     var api = _getDecoratorsApi();

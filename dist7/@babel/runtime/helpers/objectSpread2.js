@@ -1,10 +1,13 @@
-define("@babel/runtime/helpers/objectSpread2", ["exports","./defineProperty"], function (_exports, _defineProperty) {
+define("@babel/runtime/helpers/objectSpread2", ["exports","./defineProperty","./interopRequireDefault"], function (_exports, _defineProperty, _interopRequireDefault) {
   "use strict";
+
+  _interopRequireDefault = _interopRequireDefault.__esModule ? _interopRequireDefault.default : _interopRequireDefault;
 
   Object.defineProperty(_exports, "__esModule", {
     value: true
   });
   _exports["default"] = _objectSpread2;
+  _defineProperty = _interopRequireDefault(_defineProperty);
 
   function ownKeys(object, enumerableOnly) {
     var keys = Object.keys(object);

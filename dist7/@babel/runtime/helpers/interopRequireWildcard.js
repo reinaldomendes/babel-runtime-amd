@@ -1,10 +1,13 @@
-define("@babel/runtime/helpers/interopRequireWildcard", ["exports","@babel/runtime/helpers/typeof"], function (_exports, _typeof2) {
+define("@babel/runtime/helpers/interopRequireWildcard", ["exports","@babel/runtime/helpers/typeof","./interopRequireDefault"], function (_exports, _typeof2, _interopRequireDefault) {
   "use strict";
+
+  _interopRequireDefault = _interopRequireDefault.__esModule ? _interopRequireDefault.default : _interopRequireDefault;
 
   Object.defineProperty(_exports, "__esModule", {
     value: true
   });
   _exports["default"] = _interopRequireWildcard;
+  _typeof2 = _interopRequireDefault(_typeof2);
 
   function _getRequireWildcardCache(nodeInterop) {
     if (typeof WeakMap !== "function") return null;
